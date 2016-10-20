@@ -25,5 +25,24 @@ $ emoji run -s ./emoji.html -d ~/.emoji -i 1s
 Uses the fantastic github.com/urfave/cli library.
 There's a copy of this HTML page in the repo: http://unicode.org/emoji/charts/emoji-list.html
 
+## Want emojis in your prompt?
+Write a random emoji every second
+```
+$ emoji run -s ./emoji.html -d ~/.emoji -i 1s
+```
+
+Read the file into your prompt (e.g. from my ~/.bash_profile)
+```
+export PS1='[\t]\[\e[34m\][$(songkick ip)]\[\e[0m\]$(cat ~/.emoji) \[\e[36m\][\w]\[\e[0m\]\[\e[32m\]$(__git_ps1 "(%s)")\[\e[0m\]\$ '
+                                                   ^ where emojis come from
+```
+
+Prompt looks like this
+```
+[17:58:25][109.231.237.62]🖕🏼 [~]$
+[17:58:27][109.231.237.62]🎞 [~]$
+[17:58:28][109.231.237.62]😄 [~]$
+```
+
 ## Contributing
 Yes, please do.
