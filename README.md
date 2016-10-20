@@ -22,7 +22,8 @@ $ emoji run -s ./emoji.html -d ~/.emoji -i 1s
 + `--interval|-i` the interval to tick on
 
 ## Dependencies
-Uses the fantastic github.com/urfave/cli library.
+Uses the fantastic [github.com/urfave/cli]() library.
+
 There's a copy of this HTML page in the repo: http://unicode.org/emoji/charts/emoji-list.html
 
 ## Want emojis in your prompt?
