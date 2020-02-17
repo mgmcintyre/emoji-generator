@@ -81,22 +81,22 @@ func parseHTML(filepath string) (count int, err error) {
 func main() {
 	app := cli.NewApp()
 
-	app.Commands = []cli.Command{
+	app.Commands = []*cli.Command{
 		{
 			Name:    "run",
 			Aliases: []string{"r"},
 			Usage:   "run emoji parser",
 			Flags: []cli.Flag{
-				cli.StringFlag{
-					Name:  "source,s",
+				&cli.StringFlag{
+					Name:  "source",
 					Usage: "Source file for emoji",
 				},
-				cli.StringFlag{
-					Name:  "destination,d",
+				&cli.StringFlag{
+					Name:  "destination",
 					Usage: "Destination file for emoji",
 				},
-				cli.DurationFlag{
-					Name:  "interval,i",
+				&cli.DurationFlag{
+					Name:  "interval",
 					Usage: "Interval of emoji generation in seconds",
 				},
 			},

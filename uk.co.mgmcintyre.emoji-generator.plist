@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>uk.co.mgmcintyre.emoji-generator</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/mgmcintyre/go/bin/emoji-generator</string>
+        <string>run</string>
+        <string>--source</string>
+        <string>/Users/mgmcintyre/go/src/github.com/mgmcintyre/emoji-generator/emoji.html</string>
+        <string>--destination</string>
+        <string>/Users/mgmcintyre/.emoji</string>
+        <string>--interval</string>
+        <string>1s</string>
+    </array>
+    <key>StandardOutPath</key>
+    <string>/tmp/test.stdout</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/test.stderr</string>
+    <key>KeepAlive</key>
+    <true/>
+</dict>
+</plist>
